@@ -17,7 +17,7 @@ class HomePrimary extends Component {
             <Row 
                 type="flex" 
                 style={{
-                    backgroundImage: `url('/assets/images/${this.state.slider.slides[this.state.indexImage]}')`,
+                    backgroundImage: `url('http://www.casadeuco.com/images/slides/${this.state.slider.slides[this.state.indexImage]}')`,
                     backgroundSize: 'cover',
                     backgroundAttachment: 'fixed'
                 }}>

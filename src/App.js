@@ -33,7 +33,7 @@ class App extends React.Component {
                                 {globals.slides.map((slide, i) => {
                                     return (
                                         <div>
-                                            <img alt={slide} src={`/assets/images/${slide}`} key={`image-${i}`}/>
+                                            <img alt={slide} src={`http://www.casadeuco.com/images/slides/${slide}`} key={`image-${i}`}/>
                                         </div>
                                     )
                                 })}
