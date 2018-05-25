@@ -28,7 +28,7 @@ class Home2Cols extends Component {
                         {this.state.slider.slides.map((slide, i) => {
                             return (
                                 <div>
-                                    <img src={`/assets/images/${slide}`} key={`image-${i}`}/>
+                                    <img src={`http://www.casadeuco.com/images/slides/${slide}`} key={`image-${i}`}/>
                                 </div>
                             )
                         })}

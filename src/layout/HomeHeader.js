@@ -51,7 +51,7 @@ export default class Main extends React.Component {
                         <Row>
                             <Col className="logo-wrapper" span={4} offset={10}>
                                 <Link href="/" target="_blank">
-                                    <img className="img-responsive zozo-retina-logo" src="/assets/images/logo-casa-de-uco.png" alt="Casa de Uco" height="134" width="170"/>
+                                    <img className="img-responsive zozo-retina-logo" src="http://www.casadeuco.com/images/logo-casa-de-uco.png" alt="Casa de Uco" height="134" width="170"/>
                                 </Link>
                             </Col>
                         </Row>
