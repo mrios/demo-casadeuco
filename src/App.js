@@ -32,9 +32,7 @@ class App extends React.Component {
                             <Carousel autoplay dots={false}>
                                 {globals.slides.map((slide, i) => {
                                     return (
-                                        <div>
-                                            <img alt={slide} src={`http://www.casadeuco.com/images/slides/${slide}`} key={`image-${i}`}/>
-                                        </div>
+                                        <img alt={slide} src={`http://www.casadeuco.com/images/slides/${slide}`} key={`header-image-${i}`}/>
                                     )
                                 })}
                             </Carousel>

@@ -26,8 +26,8 @@ class HomeContent extends Component {
             <Content>
                 {globals.sections.map((section, i) => {
                     return (
-                        <Element name={section.name}>
-                            <HomePrimary data={section} key={`primary-${i}`} indexImage={i} />
+                        <Element name={section.name} key={`primary-${i}`}>
+                            <HomePrimary data={section} indexImage={i} />
                         </Element>
                     )
                 })}

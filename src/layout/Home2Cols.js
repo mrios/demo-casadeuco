@@ -47,7 +47,7 @@ class Home2Cols extends Component {
                             <div className="image-wrapper">
                                 {this.state.virtualTour.map((image, i) => {
                                     return (
-                                        <a href={`http://www.casadeuco.com/360tours/${image.name}`} target="_blank">
+                                        <a href={`http://www.casadeuco.com/360tours/${image.name}`} target="_blank" key={`link-tour-${i}`}>
                                             <img width={72} alt="logo" src={image.placeholder} />
                                         </a>
                                     )
