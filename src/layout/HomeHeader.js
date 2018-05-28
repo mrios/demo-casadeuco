@@ -41,7 +41,15 @@ export default class Main extends React.Component {
                 <div className="home-header-wrapper">
                     <Row className="header-contact-wrapper">
                         <Col className="social-wrapper" span={6}>
-                            <Icon type="message" />&nbsp;&nbsp;Instagram&nbsp;&nbsp;|&nbsp;&nbsp;Facebook
+                            <Icon type="message" />
+                                <a
+                                    href="https://www.instagram.com/casadeuco/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                            |   <a
+                                    href="https://www.facebook.com/pages/Casa-De-Uco/453021748113523"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
                         </Col>
                         <Col className="phone-wrapper" span={6} offset={12} style={ {textAlign: 'right' } }>
                             <Icon type="phone" /> ARG&nbsp;-&nbsp;0261 476 9831&nbsp;&nbsp;|&nbsp;&nbsp;EXT&nbsp;-&nbsp;54 261 476 9831
@@ -58,54 +66,74 @@ export default class Main extends React.Component {
                     </Element>
                     <Affix offsetTop={0}>
                         <Header className="header">
-                            <Menu
-                                className="primary-menu"
-                                theme="dark"
-                                mode="horizontal"
-                                defaultSelectedKeys={['1']}
-                                style={{ lineHeight: '64px' }}
-                                >
-                                {globals.navbar.primary.map((primaryOption, i) => {
-                                    return (
-                                        <Menu.Item key={`primary-${primaryOption.key}`}>
-                                        <Link 
-                                            className={this.state.active === primaryOption.key ? "primary-menu-link active": "primary-menu-link"}
-                                            to={primaryOption.url} 
-                                            smooth={true} 
-                                            offset={-100}
-                                            duration={500} 
-                                            onClick={ev => this.handleSetActivePrimary(primaryOption.key)}>
-                                        { primaryOption.name }
-                                        </Link>
-                                    </Menu.Item>
-                                    )
-                                })}
-                            </Menu>
-                            <Menu
-                                className="secondary-menu"
-                                theme="dark"
-                                mode="horizontal"
-                                defaultSelectedKeys={['1']}
-                                style={{ lineHeight: '64px' }}
-                                >
-                                {this.state.secondaryMenu.map((secondaryOption, i) => {
-                                    return (
-                                    <Menu.Item key={`secondary-${secondaryOption.key}`}>
-                                        <Link
-                                            className="secondary-menu-link"
-                                            activeClass="active"
-                                            to={secondaryOption.url}
-                                            spy={true} 
-                                            smooth={true} 
-                                            offset={-40}
-                                            duration={500}
-                                            onClick={this.handleSetActiveSecondary}>
-                                        { secondaryOption.name }
-                                        </Link>
-                                    </Menu.Item>
-                                    )
-                                })}
-                            </Menu>
+                            <Row>
+                                <img
+                                    id="logoMin"
+                                    src="http://www.casadeuco.com/images/logo-casa-de-uco.png"
+                                    style={{
+                                        width: 70,
+                                        clear: 'both',
+                                        display: 'block',
+                                        marginTop: 35,
+                                        marginLeft: -95,
+                                        position: 'fixed'
+                                    }}
+                                />
+                                <Col>
+                                    <Menu
+                                        className="primary-menu"
+                                        theme="dark"
+                                        mode="horizontal"
+                                        defaultSelectedKeys={['1']}
+                                        style={{ lineHeight: '64px' }}
+                                        >
+                                        {globals.navbar.primary.map((primaryOption, i) => {
+                                            return (
+                                                <Menu.Item key={`primary-${primaryOption.key}`}>
+                                                <Link
+                                                    className={this.state.active === primaryOption.key ? "primary-menu-link active": "primary-menu-link"}
+                                                    to={primaryOption.url}
+                                                    smooth={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    onClick={ev => this.handleSetActivePrimary(primaryOption.key)}>
+                                                { primaryOption.name }
+                                                </Link>
+                                            </Menu.Item>
+                                            )
+                                        })}
+                                    </Menu>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <Menu
+                                        className="secondary-menu"
+                                        theme="dark"
+                                        mode="horizontal"
+                                        defaultSelectedKeys={['1']}
+                                        style={{ lineHeight: '64px' }}
+                                        >
+                                        {this.state.secondaryMenu.map((secondaryOption, i) => {
+                                            return (
+                                            <Menu.Item key={`secondary-${secondaryOption.key}`}>
+                                                <Link
+                                                    className="secondary-menu-link"
+                                                    activeClass="active"
+                                                    to={secondaryOption.url}
+                                                    spy={true}
+                                                    smooth={true}
+                                                    offset={-40}
+                                                    duration={500}
+                                                    onClick={this.handleSetActiveSecondary}>
+                                                { secondaryOption.name }
+                                                </Link>
+                                            </Menu.Item>
+                                            )
+                                        })}
+                                    </Menu>
+                                </Col>
+                            </Row>
                         </Header>
                     </Affix>
                 </div>

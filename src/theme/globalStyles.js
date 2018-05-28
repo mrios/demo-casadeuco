@@ -136,30 +136,36 @@ injectGlobal`
 	.ant-affix {
 		background: rgba(5,5,5,0.7);
 		height: 100px;
-		-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-		-moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-			-o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-				transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		.ant-layout-header {
+			-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+			-moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+				-o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+					transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 
-		-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-		-moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-			-o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-				transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+			-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+			-moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+				-o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+					transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 
-		.primary-menu {
-			line-height: 36px !important;
-			a.primary-menu-link {
-				font-size: 14px !important;
+			margin: 0 8%;
+			.primary-menu {
+				line-height: 36px !important;
+				a.primary-menu-link {
+					font-size: 14px !important;
+				}
+			}
+			
+			.secondary-menu {
+				line-height: 36px !important;
+				a.secondary-menu-link {
+					font-size:12px;
+				}
+			}
+			
+			#logoMin {
+				opacity: 1 !important;
 			}
 		}
-
-		.secondary-menu {
-			line-height: 36px !important;
-			a.secondary-menu-link {
-				font-size:12px;
-			}
-		}
-
 	}
 
 	.home-header-wrapper {
@@ -171,9 +177,37 @@ injectGlobal`
 		padding: 0 0 40px;
 
 		.header-contact-wrapper {
-			border-bottom: 1px solid rgba(20,20,20,0.3);
 			color: white;
 			padding: 5px 30px;
+			position: fixed;
+			width: 100%;
+			z-index: 1300;
+
+			.social-wrapper {
+				a {
+					color: white;
+					margin: 0 5px;
+					opacity: 0.7;
+					transition: opacity 0.3s, visibility 0.3s;
+				}
+				a:link {
+					text-decoration: none;
+				}
+				a:hover {
+					color: white;
+					opacity: 1;
+					text-decoration: underline;
+				}
+				a:visited, a:active  {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.ant-layout-header {
+			#logoMin {
+				opacity: 0;
+			}
 		}
 	}
 
