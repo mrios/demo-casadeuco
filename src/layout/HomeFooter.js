@@ -34,7 +34,7 @@ class HomeFooter extends Component {
                                     <br/>Mendoza, Argentina.
                                 </p>
                                 <br/>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.1464770340015!2d-69.28543034404818!3d-33.600674262729406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967c37ffb41e8949%3A0x10f552b559367e16!2sCasa+de+Uco!5e0!3m2!1ses-419!2sar!4v1527249775803" width="350" height="250" frameborder="0" style={{border:0}} allowfullscreen  title="Google map"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.1464770340015!2d-69.28543034404818!3d-33.600674262729406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967c37ffb41e8949%3A0x10f552b559367e16!2sCasa+de+Uco!5e0!3m2!1ses-419!2sar!4v1527249775803" width="350" height="250" frameBorder="0" style={{border:0}} allowFullScreen title="Google map"></iframe>
                             </Card>
                         
                             <Card style={{ width: 400, margin: 20 }}>

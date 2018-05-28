@@ -8,7 +8,6 @@ class Home2Cols extends Component {
     constructor(props) {
         super(props);
         this.state = {...props.data};
-        console.log('this.state.virtualTour', this.state.virtualTour)
     }
 
     render() {
